@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<input id ='nhapvao' type="text">
+<button type="button" onclick="dictionary();">Tim Kiem</button>
+<script>
+    let tienganh=['hardware','software', 'registers', 'input', 'output', 'cache memory', 'intruction', 'program', 'secondary memory', 'floppy disk'];
+    let tiengviet=['phan cung', 'phan mem', 'cac thanh ghi', 'bo vao', 'bo ra', 'bo nho cache','huong dan','chuong tirnh','bo nho phu','dia mem']
+    let chuhoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let chuthuong ='abcdefghijklmnopqrstuvwxyz';
+    function dictionary() {
+        let ketqua = '';
+        let nghia = '';
+        let tukhoa = document.getElementById("nhapvao").value;
+        for (let i = 0; i < tukhoa.length; i++) {
+            if (chuhoa.indexOf(tukhoa[i]) >= 0) {
+                ketqua += tukhoa[i].toLowerCase();
+            } else {
+                ketqua += tukhoa[i];
+            }
+        }
+        for (let j = 0; j < tienganh.length; j++) {
+            if (ketqua == tienganh[j]) {
+                nghia = tiengviet[j];
+            }
+        }
+        if (nghia == '') {
+            alert('khong tim thay');
+        } else {
+            alert('nghia cua tu do la  : ' + nghia);
+            document.getElementById('nhapvao').value =""
+        }
+    }
+</script>
+</body>
+</html>
