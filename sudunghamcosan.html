@@ -13,20 +13,19 @@
     // console.log(myColor.join('+'));
 
     // bai 2
-    // let m = prompt('nhap vao so bat ky');
-    // let i=0;
-    // let j;
-    // n = m.toString()
-    // let ketqua=[];
-    // for (i=0; i< n.length; i++){
-    //     j = i+1;
-    //     if(+n[i]%2==0 && +n[j]%2==0){
-    //         ketqua.push(n[i],"-");
-    //     }else {
-    //         ketqua.push(n[i]);
-    //     }
-    // }
-    // document.write(ketqua.join(""));
+    let m = prompt('nhap vao so bat ky');
+    let i=0;
+    let j;
+    let ketqua=[];
+    for (i=0; i< m.length; i++){
+        j = i+1;
+        if(+m[i]%2==0 && +m[j]%2==0){
+            ketqua.push(m[i],"-");
+        }else {
+            ketqua.push(m[i]);
+        }
+    }
+    document.write(ketqua.join(""));
 
     // bai 3
     // let chuoikytu = prompt('nhap vao chuoi ky tu bat ky');
