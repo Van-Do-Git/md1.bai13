@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim so lon hon 10 trong mang</title>
+</head>
+<body>
+<script>
+    // function taomang(){
+        let mang = new Array(10);
+        for (let i=0; i<10; i++){
+            mang[i]= Math.round(Math.random()*100);
+        }
+        let mang10 = [];
+        for (let j=0; j<10; j++){
+            if (mang[j]>=10){
+                mang10.push(mang[j]);
+            }
+        }
+        document.write("ham co  "+ mang10.length+"  phan tu lon hon hoac bang 10 <br>");
+        document.write(mang10.toString());
+
+</script>
+</body>
+</html>

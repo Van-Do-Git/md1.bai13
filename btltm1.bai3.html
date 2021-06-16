@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so lon nhat trong mang va tinh trung binh</title>
+</head>
+<body>
+<script>
+  let mang = new Array(Math.round(Math.random()*20));
+  let tong= 0;
+  for (let i=0; i<mang.length; i++) {
+      mang[i] = Math.round(Math.random() * 100);
+      tong += mang[i];
+  }
+  let max = mang[0];
+  for (let j=1; j< mang.length; j++){
+      if (mang[j]>max){
+          max= mang[j];
+      }
+  }
+  document.write("so lon nhat trong mang la  : "+ max +"<br>");
+  document.write("trung binh cac so trong day la  : " + tong/mang.length);
+</script>
+</body>
+</html>

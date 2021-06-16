@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so lon nhat trong mang</title>
+</head>
+<body>
+<script>
+  let mang = new Array(10);
+  for (let i=0; i<10; i++){
+    mang[i]= Math.round(Math.random()*100);
+  }
+  let max = mang[0];
+  let vitri = -1;
+  for (let j = 1; j < 10; j++) {
+    if (mang[j]>max){
+      vitri= j;
+      max = mang[j];
+    }
+  }
+  document.write("so lon nhat la  "+max +"  tai vi tri "+vitri);
+</script>
+</body>
+</html>
