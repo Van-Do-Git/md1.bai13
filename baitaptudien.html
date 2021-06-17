@@ -23,10 +23,13 @@
                 ketqua += tukhoa[i];
             }
         }
-        for (let j = 0; j < tienganh.length; j++) {
-            if (ketqua == tienganh[j]) {
-                nghia = tiengviet[j];
-            }
+        // for (let j = 0; j < tienganh.length; j++) {
+        //     if (ketqua == tienganh[j]) {
+        //         nghia = tiengviet[j];
+        //     }
+        // }
+        if (tienganh.indexOf(ketqua)!=-1){
+            nghia = tiengviet[tienganh.indexOf(ketqua)];
         }
         if (nghia == '') {
             alert('khong tim thay');

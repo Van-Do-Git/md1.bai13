@@ -6,15 +6,15 @@
 </head>
 <body>
 <h1>Nhap doan van ban</h1>
-<textarea onkeypress="trollvo();" name="troll" id="txttrol" cols="30" rows="10" style="border: black; border-style: solid"></textarea>
+<textarea onkeydown="trollvo();" name="troll" id="txttrol" cols="30" rows="10" style="border: black; border-style: solid"></textarea>
 <script>
   i = 0;
   let ketqua="";
   function trollvo(){
-    let cautroll="Toi la ke ngoc, mac du toi van luon cham hoc";
+      document.getElementById("txttrol").value = "";
+    let cautroll="Hanh là kẻ ngốc đáng yêu, Nam cũng thế";
     let dodai= cautroll.length;
     if (i<dodai) {
-      // document.getElementById("txttrol").value = "";
       ketqua += cautroll[i];
       document.getElementById("txttrol").value = ketqua;
       i++;

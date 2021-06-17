@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let m = prompt("nhap vao moi chuoi bat ky");
+  let b= ""
+  for (let i = 0; i < m.length; i++) {
+    if (m[i]=="-"){
+      b+="_";
+    } else {
+        b+=m[i];
+    }
+  }
+  document.write(b);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let chuoi = prompt("nhap vao chuoi ky tu bat ky");
+  let so = [0,1,2,3,4,5,6,7,8,9];
+  let dem = 0;
+  for (let i = 0; i<chuoi.length; i++){
+    if (so.indexOf(+chuoi[i])==-1){
+      continue;
+    }else {
+      dem +=1;
+    }
+  }
+  document.write(chuoi);
+  document.write("chuoi nhap vao co " + dem + " ky tu so");
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dem tu trong chuoi</title>
+</head>
+<body>
+<script>
+  let chuoi = prompt("nhap vao chuoi ky tu bat ky");
+  let dem = 0;
+  // while (chuoi[1]==" "){
+  //     chuoi = chuoi.pop()
+  // }
+  // while (chuoi[chuoi.length]==" "){
+  //     chuoi = chuoi.shift()
+  // }
+  chuoi=chuoi.trim();
+  for (let i = 0; i < chuoi.length; i++) {
+      let sosanh1 =chuoi[i]!=" ";
+      let sosanh2 =chuoi[i+1]==" ";
+    if (sosanh1&&sosanh2){
+        dem+=1;
+    }
+  }
+  dem+=1;
+  alert("chuoi co " + dem + " tu");
+</script>
+</body>
+</html>
